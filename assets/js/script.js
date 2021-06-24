@@ -41,7 +41,7 @@ function getBase64Image(img) {
 
     var dataURL = canvas.toDataURL("image/png");
 
-    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+    return dataURL.replace(/^data:image\/(png|jpg);base64,/%0a/%0a/, "");
 }
 
 function fetchimage () {
